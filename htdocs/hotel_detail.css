@@ -1,0 +1,73 @@
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f4; 
+    color: #333; 
+    line-height: 1.6; 
+    padding: 20px; 
+}
+
+.top-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.top-logo img.logo {
+    height: 60px;
+    cursor: pointer;
+}
+
+.hotel-detail-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #0056b3;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+p {
+    margin-top: 10px; 
+    font-size: 16px;
+}
+
+button.reserve-button {
+    padding: 10px 20px;
+    background-color: #ff5a5f; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; 
+    margin-top: 20px; 
+    transition: background-color 0.3s;
+}
+
+button.reserve-button:hover {
+    background-color: #e53e3e;
+}
+
+
+@media (max-width: 768px) {
+    .hotel-detail-container {
+        padding: 10px;
+    }
+    h1, h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
